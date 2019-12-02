@@ -3,16 +3,20 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>YourApp | WebApp Dashboard</title>
-        <link rel="stylesheet" href=""> 
+        <link rel="stylesheet" href="css/styles.css"> 
     </head>
 
     <body class="grid">
         <header class="app-header">
             <h1>YourApp&trade;</h1>
-            <img src="icons/icon-bell.svg" alt="Bell Notification Icon">
-            <hr>
-            <img src="images/me.jpg" alt="User Profile Image">
-            <span class="userName">Ajay Balkaran</span>
+            <div class="notification">
+                <img class="notification-bell" src="icons/icon-bell.svg" alt="Bell Notification Icon">
+                <div class="bell-alert"></div>
+            </div>
+            <div class="vertical-line container-avatar">
+                <img class="profile-pic user" src="images/me.jpg" alt="User Profile Image">
+                <span class="userName">Ajay Balkaran</span>
+            </div>
         </header>
         <nav></nav>
         <main></main>

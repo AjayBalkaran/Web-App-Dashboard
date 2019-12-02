@@ -1,0 +1,35 @@
+// ======================================
+//  Variables
+// ======================================
+
+// ------------Colors--------------------
+$color-white                :#fff;
+$color-black                :#000;
+$color-gray                 :#B2B2B2; 
+
+$color-primary              :#7477BF;
+$color-secondary            :#4D4C72;
+$color-tertiary             :#5D61BF;
+
+$color-alertBell            :#85DB81;
+
+$color-text                 :#6A6969;
+$color-textGraph            :#979797;
+
+$color-primaryGraph         :#E2E3F6;
+$color-secondaryGraph       :#81C98F;
+$color-tertiaryGraph        :#73B1BF;
+
+// -----------Fonts----------------------
+$font-primary               :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+
+//-----------Breakpoints-----------------
+$breakpoints: (
+    "mobileS"               : 320px,
+    "mobileM"               : 375px,
+    "mobileL"               : 425px,
+    "tablet"                : 768px,
+    "laptop"                : 1024px,
+    "desktop"               : 1440px,
+); 

@@ -1,0 +1,47 @@
+/* ============================================= */
+/*                 Header                        */
+/* ============================================= */
+
+.app-header {
+    color: $color-white;
+    background-color: $color-primary;
+}
+
+
+//-----------Notification-bell------------------
+.notification {
+    position: relative;
+    width: 1.45em;
+}
+
+.notification-bell {
+    width: 100%;
+}
+
+.bell-alert {
+    width: .45em;
+    height: .45em;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: $color-alertBell;
+    position: absolute;
+    left: 70%;
+    top: -11%;  
+    z-index: 0;
+}
+
+
+// ----------------user-----------------------
+.vertical-line {
+    border-left: 2px solid $color-tertiary;
+    height: 60%;
+    margin-left: 1em;
+}
+
+.profile-pic {
+    margin-left: 1em;
+    margin-right: .5em;
+}
+
+

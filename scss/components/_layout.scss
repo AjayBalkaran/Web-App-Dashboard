@@ -1,0 +1,36 @@
+/* ============================================= */
+/*                 Page Layout                   */
+/* ============================================= */
+
+//------------------- Header ----------------------
+.app-header {
+
+    @include mq('tablet') {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+  
+}
+
+
+.app-header h1 {
+    @include mq('tablet') {
+        flex-grow: 1;
+        padding-left: .5em;
+    }
+}
+
+
+.container-avatar {
+    @include mq('tablet') {
+        width: 12em;
+        display: flex;
+        align-items: center;
+    } 
+}
+
+//-------------------- Nav ------------------------
+//-------------------- Main -----------------------

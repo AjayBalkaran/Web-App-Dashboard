@@ -10,7 +10,16 @@
     justify-content: space-around;
 
     @include mq('tablet') {
-        height: 10vh;
+        flex-flow: column nowrap;
+        height: 90vh;
     }
 }
 
+// .app-nav {
+//     background-color: $color-secondary;
+// }
+
+
+.app-nav a {
+    display: block;
+}

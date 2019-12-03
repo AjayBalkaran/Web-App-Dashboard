@@ -1,3 +1,16 @@
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
+
+.app-nav {
+    background-color: $color-secondary;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include mq('tablet') {
+        height: 10vh;
+    }
+}
+

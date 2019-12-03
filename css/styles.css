@@ -551,7 +551,7 @@ body {
 }
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 8% 1fr;
     grid-template-areas: "app-header app-header" "app-nav main" "app-nav main";
   }
 }

@@ -472,8 +472,20 @@ body {
 /* ============================================= */
 /*                      Icons                    */
 /* ============================================= */
-.nav-icon {
+.icon-nav {
   width: 2.5em;
+}
+
+/* ============================================= */
+/*                     Buttons                   */
+/* ============================================= */
+.fa-search {
+  color: #7477BF;
+}
+
+.container-serach button {
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

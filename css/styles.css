@@ -358,6 +358,23 @@ body {
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
+.app-nav {
+  background-color: #4D4C72;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .app-nav {
+    height: 10vh;
+  }
+}
+
+.nav-icon {
+  width: 2.5em;
+}
+
 /* ============================================= */
 /*             Profile Pictures                  */
 /* ============================================= */
@@ -377,10 +394,6 @@ body {
 .notification {
   position: relative;
   width: 1.45em;
-}
-
-.notification-bell {
-  width: 100%;
 }
 
 .bell-alert {
@@ -459,5 +472,9 @@ body {
     margin-bottom: 0;
   }
 }
+
+/* ============================================= */
+/*                      Icons                    */
+/* ============================================= */
 
 /*# sourceMappingURL=styles.css.map */

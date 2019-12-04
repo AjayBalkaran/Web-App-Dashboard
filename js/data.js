@@ -80,11 +80,11 @@ let mobileUsersOptions = {
         position: 'right',
         align: 'center',
         labels: {
-            boxWidth: 28,
-            fontFamily: 'Open Sans, sans-serif',
+            boxWidth: 20,
+            fontFamily: 'Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif',
             fontSize: 14,
             padding: 18
-    }
+        }
     },
     layout: {
         padding: {

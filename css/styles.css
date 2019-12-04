@@ -368,12 +368,19 @@ body {
 @media (min-width: 768px) {
   .app-nav {
     flex-flow: column nowrap;
-    height: 90vh;
+    height: 100%;
+    justify-content: flex-start;
+    width: fit-content;
   }
 }
 
 .app-nav a {
   display: block;
+}
+@media (min-width: 768px) {
+  .app-nav a {
+    padding: 1em;
+  }
 }
 
 /* ============================================= */
@@ -474,6 +481,12 @@ body {
   }
 }
 
+#widget-traffic-chart {
+  display: block;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
 /* ============================================= */
 /*                      Icons                    */
 /* ============================================= */
@@ -551,7 +564,7 @@ body {
 }
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: 8% 1fr;
+    grid-template-columns: 76px 1fr;
     grid-template-areas: "app-header app-header" "app-nav main" "app-nav main";
   }
 }

@@ -11,7 +11,9 @@
 
     @include mq('tablet') {
         flex-flow: column nowrap;
-        height: 90vh;
+        height: 100%;
+        justify-content: flex-start;
+        width: fit-content;
     }
 }
 
@@ -22,4 +24,8 @@
 
 .app-nav a {
     display: block;
+
+    @include mq('tablet') {
+        padding: 1em;
+    }
 }

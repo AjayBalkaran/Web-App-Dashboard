@@ -14,7 +14,7 @@ var dailyTrafficChart = new Chart(wDailyTrafficChart, {
     type: 'bar',
     data: dailyTrafficData,
     options: dailyTrafficOptions
-})
+});
 
 // ====Mobile Users Chart doughnut====
 var MobileUsers = new Chart(wMobileUsers, {

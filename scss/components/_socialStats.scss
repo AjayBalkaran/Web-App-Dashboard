@@ -1,0 +1,42 @@
+/* ============================================= */
+/*                 Social Stats                  */
+/* ============================================= */
+
+//layout not needed 
+
+.container-socialStats {
+    border: 1px solid $color-gray;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    padding: 1em 0;
+    background: $color-offwhite;
+}
+
+.container-socialIcon {
+    margin: auto;
+    width: 30%;
+    max-width: 100px;
+    min-width: 70px;
+    background: $color-primary;
+    border-radius: 50%;
+}
+
+.container-socialIcon svg {
+    transform: scale(0.5);
+}
+
+.container-socialData {
+    margin: auto;
+    // border: 1px solid red;
+}
+
+.container-socialData p {
+    font-size: 30px;
+    margin-top: .25em;
+}
+
+.socialData-title {
+    color: $color-primary;
+    margin-bottom: 0;
+}

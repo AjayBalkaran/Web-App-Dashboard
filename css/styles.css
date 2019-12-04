@@ -581,4 +581,43 @@ main {
   grid-area: main;
 }
 
+/* ============================================= */
+/*                 Social Stats                  */
+/* ============================================= */
+.container-socialStats {
+  border: 1px solid #E2E2E2;
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+  padding: 1em 0;
+  background: #FBFBFB;
+}
+
+.container-socialIcon {
+  margin: auto;
+  width: 30%;
+  max-width: 100px;
+  min-width: 70px;
+  background: #7477BF;
+  border-radius: 50%;
+}
+
+.container-socialIcon svg {
+  transform: scale(0.5);
+}
+
+.container-socialData {
+  margin: auto;
+}
+
+.container-socialData p {
+  font-size: 30px;
+  margin-top: 0.25em;
+}
+
+.socialData-title {
+  color: #7477BF;
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */

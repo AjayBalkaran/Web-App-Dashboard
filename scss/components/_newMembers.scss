@@ -64,8 +64,12 @@
 }
 
 .newMember-anniversary {
-    width: 55%;
-    text-align: right;
+    text-align: center;
+
+    @include mq('tablet') {
+        width: 55%;
+        text-align: right;
+    }
 }
 
 

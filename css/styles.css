@@ -592,18 +592,18 @@ main {
   }
 }
 
-.widget-socialStats .widget-title {
+.widget-title {
   width: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .widget-socialStats .widget-title {
+  .widget-title {
     text-align: left;
     padding-left: 2.5%;
   }
 }
 @media (min-width: 1024px) {
-  .widget-socialStats .widget-title {
+  .widget-title {
     padding-left: 4%;
   }
 }
@@ -652,6 +652,71 @@ main {
 .socialData-title {
   color: #7477BF;
   margin-bottom: 0;
+}
+
+/* ============================================= */
+/*                 Social Stats                  */
+/* ============================================= */
+.container-newMembers {
+  height: 195px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .container-newMembers {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.newMember-data {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 1px solid #E2E2E2;
+  padding-top: 1em;
+}
+@media (min-width: 768px) {
+  .newMember-data {
+    text-align: left;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .newMember-info {
+    margin: 1em;
+    padding: 0;
+    width: 35%;
+  }
+}
+
+.newMember-avatar {
+  border-radius: 50%;
+  width: 25%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .newMember-avatar {
+    max-width: 50px;
+    margin: 0 2% 2% 0;
+  }
+}
+
+.newMember-info {
+  list-style-type: none;
+  margin: auto;
+  padding: 0.5em 0 0;
+}
+
+.newMember-email {
+  color: #7477BF;
+}
+
+.newMember-anniversary {
+  width: 55%;
+  text-align: right;
 }
 
 /*# sourceMappingURL=styles.css.map */

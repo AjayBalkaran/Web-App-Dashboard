@@ -584,6 +584,30 @@ main {
 /* ============================================= */
 /*                 Social Stats                  */
 /* ============================================= */
+@media (min-width: 768px) {
+  .widget-socialStats {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+
+.widget-socialStats .widget-title {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .widget-socialStats .widget-title {
+    text-align: left;
+    padding-left: 2.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .widget-socialStats .widget-title {
+    padding-left: 4%;
+  }
+}
+
 .container-socialStats {
   border: 1px solid #E2E2E2;
   display: flex;
@@ -591,6 +615,16 @@ main {
   margin: 1em;
   padding: 1em 0;
   background: #FBFBFB;
+}
+@media (min-width: 768px) {
+  .container-socialStats {
+    width: 28%;
+  }
+}
+@media (min-width: 1024px) {
+  .container-socialStats {
+    width: 25%;
+  }
 }
 
 .container-socialIcon {
@@ -607,7 +641,7 @@ main {
 }
 
 .container-socialData {
-  margin: auto;
+  margin-right: auto;
 }
 
 .container-socialData p {

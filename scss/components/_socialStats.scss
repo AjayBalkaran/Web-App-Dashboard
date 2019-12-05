@@ -4,6 +4,28 @@
 
 //layout not needed 
 
+.widget-socialStats {
+    @include mq('tablet') {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+.widget-socialStats .widget-title {
+    width: 100%;
+    text-align: center;
+
+    @include mq('tablet'){
+        text-align: left;
+        padding-left: 2.5%;
+    }
+
+    @include mq('laptop') {
+        padding-left: 4%;
+    }
+}
+
 .container-socialStats {
     border: 1px solid $color-gray;
     display: flex;
@@ -11,6 +33,14 @@
     margin: 1em;
     padding: 1em 0;
     background: $color-offwhite;
+
+    @include mq('tablet'){
+      width: 28%;
+    }
+
+    @include mq('laptop') {
+        width: 25%;
+    }
 }
 
 .container-socialIcon {
@@ -27,7 +57,7 @@
 }
 
 .container-socialData {
-    margin: auto;
+    margin-right: auto;
     // border: 1px solid red;
 }
 

@@ -1,0 +1,71 @@
+/* ============================================= */
+/*                 Social Stats                  */
+/* ============================================= */
+
+//layout not needed 
+
+.container-newMembers {
+    height: 195px;
+    overflow: scroll;
+
+    @include mq('tablet') {
+        height: auto;
+        overflow: visible;
+    }
+}
+
+.newMember-data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid $color-gray;
+    padding-top: 1em;
+
+    @include mq('tablet') {
+        text-align: left;
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+
+.newMember-info {
+   @include mq('tablet') {
+        margin: 1em;
+        padding: 0;
+        width: 35%;
+   }
+   
+   
+}
+
+
+.newMember-avatar {
+    border-radius: 50%;
+    width: 25%;
+    margin: auto;;
+
+    @include mq('tablet') {
+        max-width: 50px;
+        margin: 0 2% 2% 0;
+    }
+}
+
+
+.newMember-info {
+   list-style-type: none;
+   margin: auto;
+   padding: .5em 0 0;
+}
+
+.newMember-email {
+    color: $color-primary;
+}
+
+.newMember-anniversary {
+    width: 55%;
+    text-align: right;
+}
+
+

@@ -1,0 +1,121 @@
+/* ============================================= */
+/*                   Settings                    */
+/* ============================================= */
+
+//layout not needed 
+
+.container-settings {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+// on/off buttons 
+.settings-option {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    
+    @include mq('tablet') {
+        justify-content: flex-start;
+        margin-left: 2.5%;
+    }
+}
+
+.switch-ios.switch-light input:checked ~ span {
+    border-color: $color-primary;
+    box-shadow: inset 0 0 0 30px $color-primary;
+}
+
+.switch-ios.switch-light > span {
+    width: 50%;
+
+    @include mq('tablet') {
+        max-width: 100px;
+        width: 60%;
+    }
+}
+
+.switch-ios.switch-light > p {
+    width: 50%;
+    
+    @include mq('tablet'){
+        width: 40%;
+    }
+}
+
+.switch-ios.switch-light input:checked ~ span a {
+    border-color: $color-primary;
+}
+
+.switch-ios.switch-light > span span { 
+    text-transform: uppercase;
+}
+
+.switch-ios.switch-light a {
+    text-decoration: none;
+}
+
+// dropdown select
+
+//remove the arrow from the select 
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+  
+  /* For IE10 */
+select::-ms-expand {
+    display: none;
+}   
+
+.settings-select {
+    margin: auto;
+    margin-bottom: 1em;
+    width: 80%;
+    @include mq('tablet') {
+        width: 95%;
+    }
+}
+
+#timezone {
+    width: 100%;
+    padding: .6em;
+    // position: absolute;
+    // left: 10%;
+    // width: 80%;
+}
+
+.settings-buttons {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq('tablet') {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+.settings-buttons button {
+    width: 45%;
+    color: $color-white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding: .6em;
+}
+
+.settings-buttons button:first-child {
+    background-color: $color-primary;
+}
+
+.settings-buttons button:last-child {
+    background-color: lighten($color-primary, 20%); 
+}

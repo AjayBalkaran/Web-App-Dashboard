@@ -1,0 +1,93 @@
+/* ============================================= */
+/*                 Social Stats                  */
+/* ============================================= */
+
+//layout not needed 
+
+.container-recentActivity {
+    height: 215px;
+    overflow: scroll;
+    margin-bottom: 1em;
+
+    @include mq('mobileL') {
+        height: 220px;
+    }
+
+    @include mq('tablet') {
+        height: auto;
+        overflow: visible;
+    }
+}
+
+
+.recentActivity-data {
+    display: flex;
+    flex-flow: wrap row;
+    border-bottom: 1px solid $color-gray;
+
+
+    @include mq('tablet') {
+        text-align: left;
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.recentActivity-avatar {
+    border-radius: 50%;
+    width: 25%;
+    margin: auto;
+
+    @include mq('tablet') {
+        max-width: 50px;
+        max-height: 50px;
+        margin: 2% 2% 2% 0;
+    }
+}
+
+.recentActivity-info {
+    padding: 0;
+    text-align: center;
+    width: 55%;
+
+
+    @include mq('tablet') {
+        width: 70%;
+        text-align: left;
+   }
+}
+
+.recentActivity-activity {
+    text-align: unset;
+    padding-left: 1em;
+    padding-bottom: 1em;
+
+    @include mq('tablet') {
+        padding: 0;
+   }
+}
+
+.recentActivity-time {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    @include mq('tablet') {
+        text-align: left;
+        margin: 0;
+   }
+}
+.recentActivity-arrow {
+    color: $color-primary;
+    font-size: 30px;
+    text-align: right;
+    width: 20%;
+    align-self: flex-start;
+
+
+    @include mq('tablet') {
+        width: 20%;
+        text-align: right;
+    }
+}

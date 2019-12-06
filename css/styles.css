@@ -355,6 +355,10 @@ body {
   color: #fff;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
@@ -660,6 +664,12 @@ main {
 .container-newMembers {
   height: 195px;
   overflow: scroll;
+  margin-bottom: 1em;
+}
+@media (min-width: 425px) {
+  .container-newMembers {
+    height: 220px;
+  }
 }
 @media (min-width: 768px) {
   .container-newMembers {
@@ -715,8 +725,109 @@ main {
 }
 
 .newMember-anniversary {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .newMember-anniversary {
+    width: 55%;
+    text-align: right;
+  }
+}
+
+/* ============================================= */
+/*                 Social Stats                  */
+/* ============================================= */
+.container-recentActivity {
+  height: 215px;
+  overflow: scroll;
+  margin-bottom: 1em;
+}
+@media (min-width: 425px) {
+  .container-recentActivity {
+    height: 220px;
+  }
+}
+@media (min-width: 768px) {
+  .container-recentActivity {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.recentActivity-data {
+  display: flex;
+  flex-flow: wrap row;
+  border-bottom: 1px solid #E2E2E2;
+}
+@media (min-width: 768px) {
+  .recentActivity-data {
+    text-align: left;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+.recentActivity-avatar {
+  border-radius: 50%;
+  width: 25%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .recentActivity-avatar {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 2% 2% 2% 0;
+  }
+}
+
+.recentActivity-info {
+  padding: 0;
+  text-align: center;
   width: 55%;
+}
+@media (min-width: 768px) {
+  .recentActivity-info {
+    width: 70%;
+    text-align: left;
+  }
+}
+
+.recentActivity-activity {
+  text-align: unset;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .recentActivity-activity {
+    padding: 0;
+  }
+}
+
+.recentActivity-time {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .recentActivity-time {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.recentActivity-arrow {
+  color: #7477BF;
+  font-size: 30px;
   text-align: right;
+  width: 20%;
+  align-self: flex-start;
+}
+@media (min-width: 768px) {
+  .recentActivity-arrow {
+    width: 20%;
+    text-align: right;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

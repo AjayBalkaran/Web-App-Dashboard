@@ -4,6 +4,33 @@
 
 //layout not needed 
 
+.container-messageUser {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
 
+.messageUser-search,
+.messageUser-message,
+.messageUser-button  {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 2px;
+    padding: .6em;
+}
 
+.messageUser-message {
+    height: 150px;
+    resize: none;
+    overflow: auto;
+}
+
+.messageUser-button {
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    text-transform: uppercase;
+}
 

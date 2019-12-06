@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>YourApp | WebApp Dashboard</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Toggle Switch -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
         <link rel="stylesheet" href="css/styles.css"> 
     </head>
 
@@ -237,6 +239,49 @@
             <section class="widget-settings">
                 <h3 id="socialStats" class="widget-title">Settings</h3>
 
+                <form class="container-settings">
+                    <!-- TEST SWITCH  1-->
+                    <label class="switch-light switch-ios settings-option" onclick="" >
+                        <p>Send Email Notifications</p>  
+                        <input type="checkbox">
+                        <span class="button">
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                        </span>
+                    </label>
+
+                    <!-- TEST SWITCH  1-->
+                    <label class="switch-light switch-ios settings-option" onclick="" >
+                        <p>Set Profile to Public</p>  
+                        <input type="checkbox">
+                        <span class="button">
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                        </span>
+                    </label>
+
+                    <div class="settings-select">
+                        <select id="timezone" name="user-timezone">
+                            <option value="" hidden>Select Timezone</option>
+                            <option value="AST">Atlantic Standard Time (AST)</option>
+                            <option value="EST">Eastern Standard Time (EST)</option>
+                            <option value="CST">Central Standard Time (CST)</option>
+                            <option value="MST">Mountain Standard Time (MST)</option>
+                            <option value="PST">Pacific Standard Time (PST)</option>
+                            <option value="AKST">Alaskan Standard Time (AKST)</option>
+                            <option value="HST">Hawaii-Aleutian Standard Time (HST)</option>
+                            <option value="UTC-11">Samoa Standard Time (UTC-11)</option>
+                            <option value="UTC+10">Chamorro Standard Time (UTC+10)</option>
+                        </select>
+                    </div>
+
+                    <div class="settings-buttons">
+                        <button>Save</button>
+                        <button>Cancel</button>
+                    </div>
+                </form>
 
             </section>
 

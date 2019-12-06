@@ -833,5 +833,34 @@ main {
 /* ============================================= */
 /*                 Message Users                 */
 /* ============================================= */
+.container-messageUser {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.messageUser-search,
+.messageUser-message,
+.messageUser-button {
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: 2px;
+  padding: 0.6em;
+}
+
+.messageUser-message {
+  height: 150px;
+  resize: none;
+  overflow: auto;
+}
+
+.messageUser-button {
+  background-color: #7477BF;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=styles.css.map */

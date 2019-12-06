@@ -7,6 +7,11 @@
 .container-newMembers {
     height: 195px;
     overflow: scroll;
+    margin-bottom: 1em;
+
+    @include mq('mobileL') {
+        height: 220px;
+    }
 
     @include mq('tablet') {
         height: auto;

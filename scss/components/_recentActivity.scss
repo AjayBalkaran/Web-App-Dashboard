@@ -55,6 +55,7 @@
     @include mq('tablet') {
         width: 70%;
         text-align: left;
+        align-self: center;
    }
 }
 

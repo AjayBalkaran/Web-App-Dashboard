@@ -3,57 +3,85 @@
 /* ============================================= */
 
 //------------------- Header ----------------------
-.app-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-
-    @include mq('tablet') {
-        align-items: center;
-    }
-}
-
-.app-header h1 {
-    align-self: center;
-    width: 100%;
-    text-align: center;
-   
-    @include mq('tablet') {
-        flex-grow: 1;
-        padding-left: .5em;
-        width: auto;
-        text-align: justify;
-    }
-}
-
-.notification {
-    align-self: center;
-    width: 10%;
-
-    @include mq('tablet') {
-        width: 1.45em;
-    }
-}
-
-.container-avatar {
-    display: flex;
-    align-items: center;
-    margin-bottom: .5em;
-    width: 65%;
-    align-self: flex-end;
-   
-    @include mq('tablet') {
-        width: 12em;
-        align-self: auto;
-        margin-bottom: 0;
-    } 
-}
-
 //-------------------- Nav ------------------------
 //-------------------- Main -----------------------
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+//---------------- widget Traffic -----------------
+.widget-traffic {
+    width: 100%;
+    border: solid 1px red;
+}
+//-------------- Widget Daily Traffic -------------
+.widget-dailyTraffic {
+    width: 100%;
+    border: solid 1px red;
+
+    @include mq('tablet') {
+        width: 50%;
+    }
+}
+
+//-------------- Widget Mobile Users --------------
+.widget-mobileUsers {
+    width: 100%;
+    border: solid 1px red;
+
+    @include mq('tablet') {
+        width: 50%;
+    }
+}
+
+
+//-------------- Widget social Stats --------------
+.widget-socialStats {
+    width: 100%;
+    border: solid 1px red;
+}
+
+//-------------- Widget New Members  --------------
+.widget-newMembers {
+    width: 100%;
+    border: solid 1px red;
+
+    @include mq('tablet') {
+        width: 50%;
+    }
+}
+
+//-------------- Widgets Recent Activity ----------
+.widget-recentActivity {
+    width: 100%;
+    border: solid 1px red;
+
+    @include mq('tablet') {
+        width: 50%;
+    }
+}
+
+//-------------- Widget message Users -------------
+.widget-messageUser {
+    width: 50%;
+    border: solid 1px red;
+}
+
+//---------------- Widget Settings ----------------
+.widget-settings {
+    width: 100%;
+    border: solid 1px red;
+
+    @include mq('tablet') {
+        width: 50%;
+    }
+}
+
 
 #widget-traffic-chart {
     display: block;
     max-width: 100%;
     margin-top: 10px;
 }
+

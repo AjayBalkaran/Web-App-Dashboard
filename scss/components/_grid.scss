@@ -13,7 +13,7 @@
 
 
     @include mq('tablet') {
-        grid-template-columns: 76px 1fr;
+        grid-template-columns: 70px 1fr;
         grid-template-areas:
         "app-header app-header"
         "app-nav main"

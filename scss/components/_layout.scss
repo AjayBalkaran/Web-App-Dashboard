@@ -22,6 +22,7 @@ main {
 
     @include mq('tablet') {
         width: 50%;
+        padding-bottom: 1em;
     }
 }
 
@@ -32,6 +33,7 @@ main {
 
     @include mq('tablet') {
         width: 50%;
+        padding-bottom: 1em;
     }
 }
 
@@ -64,8 +66,12 @@ main {
 
 //-------------- Widget message Users -------------
 .widget-messageUser {
-    width: 50%;
+    width: 100%;
     border: solid 1px red;
+
+    @include mq('tablet') {
+        width: 50%;
+    }
 }
 
 //---------------- Widget Settings ----------------

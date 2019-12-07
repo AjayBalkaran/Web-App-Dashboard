@@ -22,7 +22,22 @@
     @include mq('tablet') {
         justify-content: flex-start;
         margin-left: 2.5%;
+        width: 100%;
+        height: 68.5px;
     }
+
+    @include mq('laptop') {
+        height: 59px;
+    }
+
+    @include mq('desktop') {
+        height: 48.5px;
+    }
+
+}
+
+.settings-option p {
+    width: 50%;
 }
 
 .switch-ios.switch-light input:checked ~ span {
@@ -40,10 +55,15 @@
 }
 
 .switch-ios.switch-light > p {
-    width: 50%;
+    width: 100%;
     
     @include mq('tablet'){
+        width: 55%;
+    }
+
+    @include mq('laptop') {
         width: 40%;
+        padding-left: .6em;
     }
 }
 
@@ -80,6 +100,14 @@ select::-ms-expand {
     width: 80%;
     @include mq('tablet') {
         width: 95%;
+        margin-top: 9%;
+        margin-bottom: 1.0625em;
+    }
+
+    @include mq('laptop') {
+        width: 95%;
+        margin-top: 10.5%;
+        margin-bottom: 1.0625em;
     }
 }
 
